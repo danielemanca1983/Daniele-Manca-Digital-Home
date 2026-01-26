@@ -12,9 +12,10 @@ import { Footer } from './components/Footer';
 import { AboutPage } from './components/AboutPage';
 import { ServicesPage } from './components/ServicesPage';
 import { LearnPage } from './components/LearnPage';
+import { StrategyCallPage } from './components/StrategyCallPage';
 
 function App() {
-  const [view, setView] = useState<'home' | 'about' | 'services' | 'learn'>('home');
+  const [view, setView] = useState<'home' | 'about' | 'services' | 'learn' | 'strategy'>('home');
 
   return (
     <div className="relative min-h-screen bg-black text-white selection:bg-white selection:text-black font-sans">
@@ -36,6 +37,7 @@ function App() {
         {view === 'about' && <AboutPage />}
         {view === 'services' && <ServicesPage />}
         {view === 'learn' && <LearnPage />}
+        {view === 'strategy' && <StrategyCallPage />}
       </main>
       
       <Footer />

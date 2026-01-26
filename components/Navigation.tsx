@@ -2,8 +2,8 @@ import React from 'react';
 import { Menu } from 'lucide-react';
 
 interface NavigationProps {
-  onNavigate: (view: 'home' | 'about' | 'services' | 'learn') => void;
-  currentView: 'home' | 'about' | 'services' | 'learn';
+  onNavigate: (view: 'home' | 'about' | 'services' | 'learn' | 'strategy') => void;
+  currentView: 'home' | 'about' | 'services' | 'learn' | 'strategy';
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ onNavigate, currentView }) => {
@@ -52,17 +52,12 @@ export const Navigation: React.FC<NavigationProps> = ({ onNavigate, currentView 
                   Learn
                 </button>
                 
-                <a 
-                  href="#cta" 
-                  onClick={() => {
-                     // Anchor link behavior is handled natively if on page, 
-                     // or we could force navigate to a page with the CTA.
-                     // For now, we leave standard anchor behavior.
-                  }}
-                  className="px-5 py-2 bg-white text-black font-semibold rounded-full hover:bg-neutral-200 transition-colors"
+                <button 
+                  onClick={() => onNavigate('strategy')}
+                  className={`px-5 py-2 font-semibold rounded-full transition-colors ${currentView === 'strategy' ? 'bg-neutral-200 text-black' : 'bg-white text-black hover:bg-neutral-200'}`}
                 >
                     Book Strategy Call
-                </a>
+                </button>
             </div>
 
             {/* Mobile Menu Icon */}
