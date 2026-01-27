@@ -18,3 +18,16 @@ View your app in AI Studio: https://ai.studio/apps/drive/1ZPWniKZ1rJbpTenPdCDqVu
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## WordPress block theme (migration)
+
+The WordPress Full Site Editing theme lives in `wp-theme/daniele-manca-digital`.
+
+### Local WordPress setup (wp-env)
+
+1. Start wp-env from the repo root:
+   `npx @wordpress/env start`
+2. Activate **Daniele Manca Digital** under **Appearance → Themes**.
+3. Create pages for **About**, **Services**, **Learn**, and **Strategy Call** and assign the matching templates.
+
+For more details, see the theme README: `wp-theme/daniele-manca-digital/README.md`.

@@ -1,21 +1,21 @@
 <!-- wp:group {"className":"dm-header","layout":{"type":"constrained"}} -->
 <div class="wp-block-group dm-header">
-  <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
-  <div class="wp-block-group alignwide">
-    <!-- wp:group {"layout":{"type":"flex","verticalAlignment":"center"}} -->
-    <div class="wp-block-group">
-      <!-- wp:site-title {"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--manrope)","fontSize":"1.125rem","fontWeight":"700"}}} /-->
+  <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"},"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}}} -->
+  <div class="wp-block-group alignwide" style="padding-top:1rem;padding-bottom:1rem">
+    <!-- wp:group {"className":"dm-site-brand","layout":{"type":"flex","verticalAlignment":"center"}} -->
+    <div class="wp-block-group dm-site-brand">
+      <!-- wp:site-title {"level":0,"style":{"typography":{"fontFamily":"var(--wp--preset--font-family--manrope)","fontSize":"1.125rem","fontWeight":"700","letterSpacing":"-0.02em"}}} /-->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"layout":{"type":"flex","verticalAlignment":"center"}} -->
-    <div class="wp-block-group">
-      <!-- wp:navigation {"layout":{"type":"flex","justifyContent":"right"}} /-->
+    <!-- wp:group {"className":"dm-header-actions","layout":{"type":"flex","verticalAlignment":"center"}} -->
+    <div class="wp-block-group dm-header-actions">
+      <!-- wp:navigation {"layout":{"type":"flex","justifyContent":"right"},"style":{"typography":{"fontSize":"0.875rem","fontWeight":"500"}}} /-->
 
       <!-- wp:buttons -->
       <div class="wp-block-buttons">
-        <!-- wp:button {"className":"dm-button-light"} -->
-        <div class="wp-block-button dm-button-light"><a class="wp-block-button__link wp-element-button">Book Strategy Call</a></div>
+        <!-- wp:button {"className":"dm-button-light","url":"/strategy-call"} -->
+        <div class="wp-block-button dm-button-light"><a class="wp-block-button__link wp-element-button" href="/strategy-call">Book Strategy Call</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
