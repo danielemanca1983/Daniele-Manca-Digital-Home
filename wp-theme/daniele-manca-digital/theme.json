@@ -10,6 +10,9 @@
       "palette": [
         { "name": "Black", "slug": "black", "color": "#000000" },
         { "name": "White", "slug": "white", "color": "#ffffff" },
+        { "name": "Green 500", "slug": "green-500", "color": "#22c55e" },
+        { "name": "Blue 500", "slug": "blue-500", "color": "#3b82f6" },
+        { "name": "Yellow 500", "slug": "yellow-500", "color": "#eab308" },
         { "name": "Neutral 500", "slug": "neutral-500", "color": "#737373" },
         { "name": "Neutral 600", "slug": "neutral-600", "color": "#525252" },
         { "name": "Neutral 800", "slug": "neutral-800", "color": "#262626" },
@@ -24,12 +27,26 @@
     },
     "spacing": {
       "custom": false,
-      "spacingScale": {
-        "steps": 8
-      }
+      "spacingScale": { "steps": 8 },
+      "spacingSizes": [
+        { "name": "XS", "slug": "xs", "size": "0.75rem" },
+        { "name": "S", "slug": "s", "size": "1rem" },
+        { "name": "M", "slug": "m", "size": "1.5rem" },
+        { "name": "L", "slug": "l", "size": "2rem" },
+        { "name": "XL", "slug": "xl", "size": "3rem" },
+        { "name": "2XL", "slug": "2xl", "size": "4rem" },
+        { "name": "3XL", "slug": "3xl", "size": "6rem" }
+      ]
     },
     "typography": {
       "customFontSize": false,
+      "fontWeights": [
+        { "name": "Light", "slug": "light", "fontWeight": "300" },
+        { "name": "Regular", "slug": "regular", "fontWeight": "400" },
+        { "name": "Medium", "slug": "medium", "fontWeight": "500" },
+        { "name": "Semibold", "slug": "semibold", "fontWeight": "600" },
+        { "name": "Bold", "slug": "bold", "fontWeight": "700" }
+      ],
       "fontFamilies": [
         {
           "fontFamily": "'Inter', sans-serif",
@@ -49,7 +66,8 @@
         { "name": "Large", "slug": "large", "size": "1.5rem" },
         { "name": "XL", "slug": "x-large", "size": "2.25rem" },
         { "name": "XXL", "slug": "xx-large", "size": "3rem" },
-        { "name": "Display", "slug": "display", "size": "4rem" }
+        { "name": "Display", "slug": "display", "size": "4rem" },
+        { "name": "Jumbo", "slug": "jumbo", "size": "5rem" }
       ]
     }
   },
@@ -93,7 +111,29 @@
           "radius": "0px"
         },
         "typography": {
-          "fontWeight": "600"
+          "fontWeight": "600",
+          "letterSpacing": "-0.01em"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--white)"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": "0px"
+        },
+        "typography": {
+          "fontWeight": "600",
+          "letterSpacing": "-0.01em"
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--manrope)"
         }
       }
     }

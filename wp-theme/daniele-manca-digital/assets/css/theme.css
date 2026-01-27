@@ -61,6 +61,37 @@ body {
   border-bottom: 1px solid #171717;
 }
 
+.dm-site-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.dm-site-brand::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.dm-header-actions {
+  gap: 24px;
+}
+
+.dm-header .wp-block-navigation a {
+  color: #737373;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.dm-header .wp-block-navigation a:hover,
+.dm-header .wp-block-navigation .current-menu-item > a {
+  color: #ffffff;
+}
+
 .dm-header-spacer {
   padding-top: 96px;
 }
