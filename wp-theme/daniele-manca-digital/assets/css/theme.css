@@ -1,0 +1,116 @@
+:root {
+  --dm-max-width: 1920px;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
+.dm-grid-lines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.dm-grid-lines__inner {
+  position: relative;
+  width: 100%;
+  max-width: var(--dm-max-width);
+  padding: 0 24px;
+}
+
+.dm-grid-lines__columns {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.dm-grid-lines__column {
+  flex: 1 1 auto;
+  border-left: 1px solid rgba(23, 23, 23, 0.6);
+}
+
+.dm-grid-lines__column:last-child {
+  border-right: 1px solid rgba(23, 23, 23, 0.6);
+}
+
+.dm-section {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #171717;
+}
+
+.dm-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #171717;
+}
+
+.dm-header-spacer {
+  padding-top: 96px;
+}
+
+.dm-muted {
+  color: #737373;
+}
+
+.dm-card {
+  border: 1px solid #171717;
+  background-color: #000000;
+}
+
+.dm-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #262626;
+  font-family: "ui-monospace", SFMono-Regular, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.dm-button-dark .wp-block-button__link {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 0;
+  padding: 16px 28px;
+}
+
+.dm-button-dark .wp-block-button__link:hover {
+  background-color: #262626;
+}
+
+.dm-button-light .wp-block-button__link {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0;
+  padding: 16px 28px;
+}
+
+.dm-button-light .wp-block-button__link:hover {
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 1024px) {
+  .dm-grid-lines__inner {
+    padding: 0 32px;
+  }
+}
