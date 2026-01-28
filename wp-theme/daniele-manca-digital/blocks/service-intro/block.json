@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/service-intro",
+  "title": "Service Intro Section",
+  "description": "Introduction section for services with framework explanation",
+  "category": "daniele-manca",
+  "icon": "heading",
+  "supports": {
+    "html": false,
+    "align": false
+  },
+  "attributes": {
+    "statusText": {
+      "type": "string",
+      "default": "Clear Value, No Confusion"
+    },
+    "statusColor": {
+      "type": "string",
+      "default": "blue"
+    },
+    "mainHeading": {
+      "type": "string",
+      "default": "Strategic Website Services Built to Support Real Business Outcomes"
+    },
+    "introText": {
+      "type": "string",
+      "default": "A business-first approach for professional service firms and established e-commerce businesses who want clarity, credibility, and dependable commercial performance — delivered through expert-led website strategy, not disconnected tactics."
+    },
+    "sectionHeading": {
+      "type": "string",
+      "default": "ONE SYSTEM, MULTIPLE ENTRY POINTS"
+    },
+    "systemDescription": {
+      "type": "string",
+      "default": "Most businesses don't need more digital services. They need the right services, applied intentionally. The Website-as-an-Asset System is the framework that guides everything I do. It can involve one service — or a combination — depending on what will most effectively support your business."
+    },
+    "systemNote": {
+      "type": "string",
+      "default": "The common thread is this: every service is delivered through a business-first lens, not as an isolated tactic."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

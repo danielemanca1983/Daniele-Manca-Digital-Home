@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/about-hero",
+  "title": "About Hero",
+  "description": "Hero section for about page with status indicator and main heading",
+  "category": "daniele-manca",
+  "icon": "heading",
+  "supports": {
+    "html": false,
+    "align": false,
+    "spacing": {
+      "padding": true,
+      "margin": false
+    }
+  },
+  "attributes": {
+    "statusText": {
+      "type": "string",
+      "default": "Who This Is Really For"
+    },
+    "mainHeading": {
+      "type": "string",
+      "default": "I help business owners turn their websites into real business assets — not sources of confusion, stress, or quiet risk."
+    },
+    "introText": {
+      "type": "string",
+      "default": "Specifically, I work with professional service firms and established e-commerce businesses who are tired of second-guessing digital decisions and want a website they can trust to support credibility, revenue, and long-term growth."
+    },
+    "highlightText": {
+      "type": "string",
+      "default": "Without hype. Without jargon. And without needing to micromanage every detail."
+    },
+    "closingText": {
+      "type": "string",
+      "default": "But I didn't always see websites this way — and I understand why so many businesses feel stuck."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

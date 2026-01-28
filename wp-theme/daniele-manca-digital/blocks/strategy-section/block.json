@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/strategy-section",
+  "title": "Strategy Section",
+  "description": "What to expect section with 3-column cards for strategy call page",
+  "category": "daniele-manca",
+  "icon": "heading",
+  "supports": {
+    "html": false,
+    "align": false
+  },
+  "attributes": {
+    "mainHeading": {
+      "type": "string",
+      "default": "What to Expect"
+    },
+    "cards": {
+      "type": "array",
+      "default": [
+        {
+          "number": "01",
+          "color": "green",
+          "title": "Website Review",
+          "description": "I'll analyze your current website to understand what's working and where risks or missed opportunities exist."
+        },
+        {
+          "number": "02",
+          "color": "blue",
+          "title": "Strategic Discussion",
+          "description": "We'll talk about your business goals, commercial context, and what \"success\" actually looks like for you."
+        },
+        {
+          "number": "03",
+          "color": "yellow",
+          "title": "Clarity & Next Steps",
+          "description": "You'll leave with a clear understanding of your options and whether working together makes sense."
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

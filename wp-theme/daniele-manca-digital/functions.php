@@ -49,6 +49,11 @@ add_action( 'init', function () {
         'benefits',
         'audience',
         'cta',
+        'about-hero',
+        'about-story',
+        'service-intro',
+        'learn-hero',
+        'strategy-section',
     );
 
     foreach ( $blocks as $block ) {
@@ -68,6 +73,11 @@ add_action( 'wp_enqueue_scripts', function () {
         'benefits',
         'audience',
         'cta',
+        'about-hero',
+        'about-story',
+        'service-intro',
+        'learn-hero',
+        'strategy-section',
     );
 
     foreach ( $blocks as $block ) {

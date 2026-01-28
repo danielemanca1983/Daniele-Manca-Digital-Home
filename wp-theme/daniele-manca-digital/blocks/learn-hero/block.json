@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/learn-hero",
+  "title": "Learn Hero Section",
+  "description": "Hero section for learn/resources page",
+  "category": "daniele-manca",
+  "icon": "heading",
+  "supports": {
+    "html": false,
+    "align": false
+  },
+  "attributes": {
+    "statusText": {
+      "type": "string",
+      "default": "Insight & Clarity"
+    },
+    "statusColor": {
+      "type": "string",
+      "default": "yellow"
+    },
+    "mainHeading": {
+      "type": "string",
+      "default": "Clear thinking about websites as business assets"
+    },
+    "introText": {
+      "type": "string",
+      "default": "Practical guidance for business owners who want clarity, credibility, and dependable commercial performance — without jargon, hype, or reactive digital decisions."
+    },
+    "libraryLabel": {
+      "type": "string",
+      "default": "Knowledge Library"
+    },
+    "sectionHeading": {
+      "type": "string",
+      "default": "What You'll Find Here"
+    },
+    "sectionIntro": {
+      "type": "string",
+      "default": "Your website affects credibility, conversion, and revenue — whether you're actively working on it or not."
+    },
+    "cardItems": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Make Better Decisions",
+          "description": "Stop guessing and start understanding the mechanics of digital assets."
+        },
+        {
+          "title": "Reduce Risk",
+          "description": "Avoid expensive rebuilds and misaligned strategies."
+        }
+      ]
+    },
+    "highlightText": {
+      "type": "string",
+      "default": "Everything here is grounded in the Website-as-an-Asset philosophy: treating your website as infrastructure, not a trend-driven project."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

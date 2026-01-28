@@ -1,0 +1,88 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+<!-- wp:group {"className":"dm-header-spacer"} -->
+<div class="wp-block-group dm-header-spacer"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+  <!-- wp:group {"className":"py-16 md:py-24"} -->
+  <div class="wp-block-group py-16 md:py-24">
+    <!-- Post Title -->
+    <h1 class="font-display text-4xl md:text-5xl text-white mb-6">
+      <!-- wp:post-title {"isLink": false} /-->
+    </h1>
+    
+    <!-- Post Meta -->
+    <div class="flex flex-wrap items-center gap-6 text-sm text-neutral-400 mb-12 pb-6 border-b border-neutral-800">
+      <div class="flex items-center gap-2">
+        <span>By</span>
+        <!-- wp:post-author {"textAlign":"left","className":"inline"} /-->
+      </div>
+      <div>
+        <!-- wp:post-date {"format":"M j, Y"} /-->
+      </div>
+      <!-- wp:post-terms {"term":"category","className":"inline"} /-->
+    </div>
+    
+    <!-- Featured Image -->
+    <!-- wp:post-featured-image {"isLink": false, "className":"mb-12 md:mb-16"} /-->
+    
+    <!-- Post Content -->
+    <div class="prose prose-invert max-w-4xl text-lg text-neutral-400 leading-relaxed">
+      <!-- wp:post-content /-->
+    </div>
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- Post Navigation -->
+  <!-- wp:group {"className":"py-12 border-t border-neutral-800"} -->
+  <div class="wp-block-group py-12 border-t border-neutral-800">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Previous Post -->
+      <!-- wp:query {"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"namespace":"core/query"} -->
+      <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <div class="text-left">
+          <div class="text-sm text-neutral-500 mb-2">Previous Post</div>
+          <!-- wp:post-title {"isLink": true, "fontSize":"medium"} /-->
+        </div>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+      
+      <!-- Next Post -->
+      <!-- wp:query {"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"asc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"namespace":"core/query"} -->
+      <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <div class="text-right">
+          <div class="text-sm text-neutral-500 mb-2">Next Post</div>
+          <!-- wp:post-title {"isLink": true, "fontSize":"medium"} /-->
+        </div>
+        <!-- /wp:post-template -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+  </div>
+  <!-- /wp:group -->
+  
+  <!-- Comments -->
+  <!-- wp:comments {"className":"py-12"} -->
+  <div class="wp-block-comments py-12">
+    <!-- wp:comments-title /-->
+    <!-- wp:comment-template -->
+    <div class="border border-neutral-800 p-6 mb-6 bg-neutral-900/50">
+      <!-- wp:comment-author-name {"linkTo":"commenter"} /-->
+      <div class="text-sm text-neutral-500 mt-2">
+        <!-- wp:comment-date {"format":"M j, Y"} /-->
+      </div>
+      <!-- wp:comment-content /-->
+    </div>
+    <!-- /wp:comment-template -->
+    
+    <!-- wp:comment-form /-->
+  </div>
+  <!-- /wp:comments -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

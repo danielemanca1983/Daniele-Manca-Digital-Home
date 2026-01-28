@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/about-story",
+  "title": "About Story Section",
+  "description": "Story section with internal hesitation callout",
+  "category": "daniele-manca",
+  "icon": "format-quote",
+  "supports": {
+    "html": false,
+    "align": false
+  },
+  "attributes": {
+    "storyHeading": {
+      "type": "string",
+      "default": "\"I Know How This Feels\""
+    },
+    "storyParagraphs": {
+      "type": "array",
+      "default": [
+        "I know how uncomfortable it is to rely on something you don't fully trust.",
+        "I've seen what happens when a website looks fine on the surface, but underneath is unclear, over-complicated, or misaligned with the actual business. When decisions are made reactively. When vendors speak in abstractions. When responsibility is fragmented and no one is truly accountable.",
+        "From the outside, everything can appear \"done.\" But internally, there's hesitation.",
+        "For service firms, that uncertainty shows up as inconsistent enquiries or weakened credibility. For e-commerce businesses, it shows up as conversion friction, fragile systems, or revenue that doesn't feel dependable."
+      ]
+    },
+    "hesitationItems": {
+      "type": "array",
+      "default": [
+        {
+          "number": "01",
+          "text": "Is this really working?"
+        },
+        {
+          "number": "02",
+          "text": "Are we leaving money on the table?"
+        },
+        {
+          "number": "03",
+          "text": "What breaks if traffic spikes, ads scale, or competitors move faster?"
+        }
+      ]
+    },
+    "closingText": {
+      "type": "string",
+      "default": "Different symptoms — same underlying issue: no one is treating the website like the business asset it actually is."
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}
