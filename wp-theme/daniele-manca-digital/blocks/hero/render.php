@@ -13,7 +13,7 @@ $disclaimer = isset( $attributes['disclaimerText'] ) ? sanitize_text_field( $att
 $min_height = isset( $attributes['minHeight'] ) ? sanitize_html_class( $attributes['minHeight'] ) : '90vh';
 ?>
 
-<section class="wp-block-daniele-manca-hero dm-hero pt-32 pb-24 md:pt-48 md:pb-32" style="--min-height: <?php echo esc_attr( $min_height ); ?>;"">
+<section class="wp-block-daniele-manca-hero dm-hero pt-32 pb-24 md:pt-48 md:pb-32" style="--min-height: <?php echo esc_attr( $min_height ); ?>;">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0">
         
         <!-- Main Headline Area -->

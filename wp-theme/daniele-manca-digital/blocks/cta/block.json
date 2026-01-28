@@ -43,6 +43,6 @@
     },
     "html": false
   },
-  "editorScript": "file:./render.php",
+  "render": "file:./render.php",
   "style": "file:./style.css"
 }
