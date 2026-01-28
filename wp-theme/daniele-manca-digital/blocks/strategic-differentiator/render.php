@@ -13,12 +13,9 @@ $services_label = isset( $attributes['servicesLabel'] ) ? sanitize_text_field( $
 $services_text = isset( $attributes['servicesText'] ) ? sanitize_text_field( $attributes['servicesText'] ) : 'Clearer positioning, stronger trust signals, and more consistent enquiries.';
 $footer_text = isset( $attributes['footerText'] ) ? sanitize_text_field( $attributes['footerText'] ) : 'Different business models. Same principle: your website should actively support the business.';
 
-$wrapper_attrs = get_block_wrapper_attributes( array(
-    'class' => 'dm-strategic-differentiator py-24 bg-neutral-950 overflow-hidden',
-) );
 ?>
 
-<section <?php echo wp_kses_data( $wrapper_attrs ); ?> id="differentiator">
+<section class="wp-block-daniele-manca-strategic-differentiator dm-strategic-differentiator py-24 bg-neutral-950 overflow-hidden" id="differentiator">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         <!-- LEFT COLUMN: Text Content & Principles -->

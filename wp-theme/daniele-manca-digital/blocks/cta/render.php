@@ -10,12 +10,9 @@ $button_text = isset( $attributes['buttonText'] ) ? sanitize_text_field( $attrib
 $button_url = isset( $attributes['buttonUrl'] ) ? esc_url( $attributes['buttonUrl'] ) : '#';
 $disclaimer = isset( $attributes['disclaimerText'] ) ? sanitize_text_field( $attributes['disclaimerText'] ) : '';
 
-$wrapper_attrs = get_block_wrapper_attributes( array(
-    'class' => 'dm-cta py-32 bg-white text-black',
-) );
 ?>
 
-<section <?php echo wp_kses_data( $wrapper_attrs ); ?> id="cta">
+<section class="wp-block-daniele-manca-cta dm-cta py-32 bg-white text-black" id="cta">
     <div class="max-w-4xl mx-auto text-center">
         
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-neutral-200 bg-neutral-50 text-xs font-mono uppercase tracking-widest text-neutral-500 mb-8">

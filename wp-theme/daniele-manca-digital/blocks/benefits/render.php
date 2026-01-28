@@ -11,12 +11,9 @@ $system_outputs = isset( $attributes['systemOutputs'] ) ? (array) $attributes['s
 $quiet_shift_label = isset( $attributes['quietShiftLabel'] ) ? sanitize_text_field( $attributes['quietShiftLabel'] ) : 'The Quiet Shift';
 $quiet_shift_text = isset( $attributes['quietShiftText'] ) ? sanitize_text_field( $attributes['quietShiftText'] ) : 'You stop feeling behind — and start feeling secure, confident, and in control again.';
 
-$wrapper_attrs = get_block_wrapper_attributes( array(
-    'class' => 'dm-benefits py-24',
-) );
 ?>
 
-<section <?php echo wp_kses_data( $wrapper_attrs ); ?> id="benefits">
+<section class="wp-block-daniele-manca-benefits dm-benefits py-24" id="benefits">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         
         <!-- LEFT COLUMN: Sticky Heading (lg:col-span-4) -->

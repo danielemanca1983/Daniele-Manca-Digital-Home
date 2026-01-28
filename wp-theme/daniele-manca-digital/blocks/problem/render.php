@@ -8,13 +8,9 @@ $heading_highlight = isset( $attributes['headingHighlight'] ) ? sanitize_text_fi
 $narrative_paragraphs = isset( $attributes['narrativeParagraphs'] ) ? (array) $attributes['narrativeParagraphs'] : array();
 $concern_title = isset( $attributes['concernTitle'] ) ? sanitize_text_field( $attributes['concernTitle'] ) : 'The Underlying Concern';
 $concerns = isset( $attributes['concerns'] ) ? (array) $attributes['concerns'] : array();
-
-$wrapper_attrs = get_block_wrapper_attributes( array(
-    'class' => 'dm-problem bg-neutral-950 py-24',
-) );
 ?>
 
-<section <?php echo wp_kses_data( $wrapper_attrs ); ?> id="problem">
+<section class="wp-block-daniele-manca-problem dm-problem bg-neutral-950 py-24" id="problem">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
         
         <!-- Left Column: The Hook -->

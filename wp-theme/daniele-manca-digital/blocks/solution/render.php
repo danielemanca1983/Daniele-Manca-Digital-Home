@@ -10,10 +10,6 @@ $secondary_text = isset( $attributes['secondaryText'] ) ? wp_kses_post( $attribu
 $principles = isset( $attributes['principles'] ) ? (array) $attributes['principles'] : array();
 $tagline_items = isset( $attributes['taglineItems'] ) ? (array) $attributes['taglineItems'] : array();
 
-$wrapper_attrs = get_block_wrapper_attributes( array(
-    'class' => 'dm-solution py-24 md:py-32',
-) );
-
 // Icon map (simple SVG implementations)
 $icon_map = array(
     'compass' => '<svg class="w-10 h-10 text-white mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 003 16.382V5.618a1 1 0 01.553-.894l5.447-2.724m0 0L9 3m6-1l5.447 2.724A1 1 0 0021 5.618v10.764a1 1 0 01-.553.894l-5.447 2.724M9 20V9m6 11v-9m6-5l-5.447-2.724A1 1 0 0015 5.618V3m0 0L9 1"></path></svg>',
@@ -22,7 +18,7 @@ $icon_map = array(
 );
 ?>
 
-<section <?php echo wp_kses_data( $wrapper_attrs ); ?> id="solution">
+<section class="wp-block-daniele-manca-solution dm-solution py-24 md:py-32" id="solution">
     <!-- Centered Intro Section -->
     <div class="max-w-4xl mx-auto text-center mb-20">
         <h2 class="font-display text-4xl md:text-5xl text-white mb-6 tracking-tight">

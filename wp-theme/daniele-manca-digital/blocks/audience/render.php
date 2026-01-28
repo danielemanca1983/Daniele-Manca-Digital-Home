@@ -12,12 +12,9 @@ $not_fit_title = isset( $attributes['notFitTitle'] ) ? sanitize_text_field( $att
 $not_fit_points = isset( $attributes['notFitPoints'] ) ? (array) $attributes['notFitPoints'] : array();
 $not_fit_rec = isset( $attributes['notFitRecommendation'] ) ? sanitize_text_field( $attributes['notFitRecommendation'] ) : 'If you want calm confidence, strategic clarity, and a website you can rely on — this is built for you.';
 
-$wrapper_attrs = get_block_wrapper_attributes( array(
-    'class' => 'dm-audience py-24 bg-neutral-950',
-) );
 ?>
 
-<section <?php echo wp_kses_data( $wrapper_attrs ); ?> id="audience">
+<section class="wp-block-daniele-manca-audience dm-audience py-24 bg-neutral-950" id="audience">
     <!-- Header -->
     <div class="text-center max-w-3xl mx-auto mb-16">
         <h2 class="font-display text-3xl md:text-4xl text-white mb-4">
