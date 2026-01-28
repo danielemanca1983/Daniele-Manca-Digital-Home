@@ -1,0 +1,30 @@
+/* Benefits Block Styles */
+.wp-block-daniele-manca-benefits {
+    padding: 1.5rem;
+}
+
+.dm-benefits {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .dm-benefits {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Benefits Grid */
+.dm-benefits .grid {
+    gap: 2rem;
+}
+
+/* Benefit cards */
+.dm-benefits .border {
+    transition: all 0.2s ease;
+}
+
+.dm-benefits .hover\:border-blue-500:hover {
+    border-color: var(--wp--preset--color--blue-500, #3b82f6);
+}

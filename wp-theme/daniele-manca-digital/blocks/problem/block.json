@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/problem",
+  "title": "Problem Section",
+  "category": "daniele-manca",
+  "description": "Problem identification section with narrative and risk indicators",
+  "icon": "warning",
+  "keywords": ["problem", "risk", "pain points"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "mainHeading": {
+      "type": "string",
+      "default": "Business Risk, Not \"Web Design\""
+    },
+    "headingHighlight": {
+      "type": "string",
+      "default": "Web Design"
+    },
+    "narrativeParagraphs": {
+      "type": "array",
+      "default": [
+        "Your website should be working quietly in the background — building trust, supporting buying decisions, and reinforcing your credibility at every stage of the customer journey.",
+        "Instead, it often feels like a liability.",
+        "You've invested time and money, yet results are inconsistent. Advice is contradictory. Every vendor speaks a different language. And each new \"solution\" seems to introduce more complexity, more risk, and more decisions you never wanted to manage in the first place.",
+        "For some businesses, this shows up as inconsistent enquiries. For others, it shows up as traffic that doesn't convert, stalled sales, or revenue that feels fragile."
+      ]
+    },
+    "concernTitle": {
+      "type": "string",
+      "default": "The Underlying Concern"
+    },
+    "concerns": {
+      "type": "array",
+      "default": [
+        "Is this actually helping my business — or quietly undermining it?",
+        "Does this website reflect the credibility we've worked hard to build?",
+        "What am I risking by leaving this unresolved?"
+      ]
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "editorScript": "file:./render.php",
+  "style": "file:./style.css"
+}

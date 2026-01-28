@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/benefits",
+  "title": "Benefits Section",
+  "category": "daniele-manca",
+  "description": "Showcase the key benefits with sticky sidebar and The Quiet Shift callout",
+  "icon": "yes-alt",
+  "keywords": ["benefits", "outcomes", "features", "sticky"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "mainHeading": {
+      "type": "string",
+      "default": "Tangible, Emotional, Strategic"
+    },
+    "headingHighlight": {
+      "type": "string",
+      "default": "Strategic"
+    },
+    "benefits": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Clarity",
+          "description": "Absolute confidence in what your website is responsible for — and what it isn't."
+        },
+        {
+          "title": "Credibility",
+          "description": "A professional online presence that builds trust before a conversation or purchase ever begins."
+        },
+        {
+          "title": "Reliable Commercial Performance",
+          "description": "A foundation designed to support qualified enquiries, stronger conversion rates, or more predictable revenue — depending on your business model."
+        },
+        {
+          "title": "Reduced Risk",
+          "description": "Fewer reactive decisions, less wasted spend, and far less digital anxiety."
+        },
+        {
+          "title": "Peace of Mind",
+          "description": "The relief of knowing your website is being handled properly — without hovering, micromanaging, or second-guessing."
+        }
+      ]
+    },
+    "systemOutputs": {
+      "type": "array",
+      "default": ["CONTROL", "GROWTH", "STABILITY"]
+    },
+    "quietShiftLabel": {
+      "type": "string",
+      "default": "The Quiet Shift"
+    },
+    "quietShiftText": {
+      "type": "string",
+      "default": "You stop feeling behind — and start feeling secure, confident, and in control again."
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "style": "file:./style.css"
+}

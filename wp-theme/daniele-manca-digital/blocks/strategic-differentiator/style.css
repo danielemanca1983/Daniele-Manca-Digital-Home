@@ -1,0 +1,25 @@
+/* Strategic Differentiator Block Styles */
+.wp-block-daniele-manca-strategic-differentiator {
+    padding: 1.5rem;
+}
+
+.dm-strategic-differentiator {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .dm-strategic-differentiator {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Comparison cards */
+.dm-strategic-differentiator .space-y-4 {
+    gap: 1rem;
+}
+
+.dm-strategic-differentiator .border {
+    transition: all 0.2s ease;
+}

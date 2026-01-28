@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/hero",
+  "title": "Hero Section",
+  "category": "daniele-manca",
+  "description": "Main hero section with headline, subheading, and CTA",
+  "icon": "cover-image",
+  "keywords": ["hero", "banner", "cta"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "status": {
+      "type": "string",
+      "default": "Calm Authority, Broader Reach"
+    },
+    "headline": {
+      "type": "string",
+      "default": "Turn Your Website Into a Real Business Asset — Not a Source of Stress"
+    },
+    "highlightedText": {
+      "type": "string",
+      "default": "Business Asset"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "A business-first website strategy for professional service firms and growing e-commerce brands who want credibility, clarity, and dependable commercial performance — without hype, jargon, or constant oversight."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Book a Strategy Consultation"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#cta"
+    },
+    "disclaimerText": {
+      "type": "string",
+      "default": "No Pitch. Strategic Conversation Only."
+    },
+    "minHeight": {
+      "type": "string",
+      "default": "90vh"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "editorScript": "file:./render.php",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js"
+}

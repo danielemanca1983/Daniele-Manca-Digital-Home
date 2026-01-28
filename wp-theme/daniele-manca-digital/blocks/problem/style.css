@@ -1,0 +1,44 @@
+/* Problem Block Styles */
+.wp-block-daniele-manca-problem {
+    background-color: var(--wp--preset--color--neutral-950, #0a0a0a);
+    padding: 1.5rem;
+}
+
+.dm-problem {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .dm-problem {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Responsive grid */
+.dm-problem .grid {
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .dm-problem .grid {
+        gap: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dm-problem .grid {
+        gap: 9rem;
+    }
+}
+
+/* Icon styling */
+.dm-problem svg {
+    flex-shrink: 0;
+}
+
+/* Transition for hover */
+.dm-problem .border {
+    transition: border-color 0.2s ease;
+}

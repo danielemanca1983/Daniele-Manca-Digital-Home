@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/solution",
+  "title": "Solution Section",
+  "category": "daniele-manca",
+  "description": "Solution and approach section with card icons and footer tagline",
+  "icon": "lightbulb",
+  "keywords": ["solution", "approach", "benefits"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "mainHeading": {
+      "type": "string",
+      "default": "Clear, Grounded Relief"
+    },
+    "introText": {
+      "type": "string",
+      "default": "There is a calmer, more dependable way forward. The Website-as-an-Asset System is a business-first approach that turns your website into a dependable, confidence-building business asset — one that supports revenue, conversion, and long-term growth, not just appearance."
+    },
+    "secondaryText": {
+      "type": "string",
+      "default": "Whether your website's role is to generate qualified enquiries or drive direct sales, the underlying principle is the same: clarity, trust, and commercial intent."
+    },
+    "principles": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Clear Strategic Direction",
+          "description": "Instead of chasing trends, tools, or opinions, you get a roadmap that aligns digital tactics with real business goals.",
+          "icon": "compass"
+        },
+        {
+          "title": "Expert-Led Decision Making",
+          "description": "Expert stewardship over constant involvement. We handle the complexity so you don't have to.",
+          "icon": "shield-check"
+        },
+        {
+          "title": "Business Objective Support",
+          "description": "A website designed to support your business objectives over time, not just look good for a launch day.",
+          "icon": "bar-chart"
+        }
+      ]
+    },
+    "taglineItems": {
+      "type": "array",
+      "default": ["No Hype", "No Jargon", "No Constant Oversight"]
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "style": "file:./style.css"
+}
+  "editorScript": "file:./render.php",
+  "style": "file:./style.css"
+}

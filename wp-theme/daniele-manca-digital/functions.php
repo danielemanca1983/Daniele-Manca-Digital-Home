@@ -36,3 +36,72 @@ add_action( 'init', function () {
         )
     );
 } );
+
+/**
+ * Register Custom Blocks
+ */
+add_action( 'init', function () {
+    $blocks = array(
+        'hero',
+        'problem',
+        'solution',
+        'strategic-differentiator',
+        'benefits',
+        'audience',
+        'cta',
+    );
+
+    foreach ( $blocks as $block ) {
+        register_block_type( get_theme_file_path( "/blocks/{$block}/block.json" ) );
+    }
+} );
+
+/**
+ * Enqueue Block Styles
+ */
+add_action( 'wp_enqueue_scripts', function () {
+    $blocks = array(
+        'hero',
+        'problem',
+        'solution',
+        'strategic-differentiator',
+        'benefits',
+        'audience',
+        'cta',
+    );
+
+    foreach ( $blocks as $block ) {
+        wp_enqueue_style(
+            "daniele-manca-block-{$block}",
+            get_theme_file_uri( "/blocks/{$block}/style.css" ),
+            array(),
+            DANIELE_MANCA_THEME_VERSION
+        );
+    }
+}, 11 );
+
+/**
+ * Enqueue Block Scripts
+ */
+add_action( 'wp_footer', function () {
+    if ( is_admin() ) {
+        return;
+    }
+
+    $blocks = array(
+        'hero',
+    );
+
+    foreach ( $blocks as $block ) {
+        $script_path = get_theme_file_path( "/blocks/{$block}/view.js" );
+        if ( file_exists( $script_path ) ) {
+            wp_enqueue_script(
+                "daniele-manca-block-{$block}",
+                get_theme_file_uri( "/blocks/{$block}/view.js" ),
+                array(),
+                DANIELE_MANCA_THEME_VERSION,
+                true
+            );
+        }
+    }
+}, 20 );

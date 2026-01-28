@@ -1,0 +1,36 @@
+/* Solution Block Styles */
+.wp-block-daniele-manca-solution {
+    padding: 1.5rem;
+}
+
+.dm-solution {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .dm-solution {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Principles Grid */
+.dm-solution .grid {
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .dm-solution .grid {
+        gap: 1.5rem;
+    }
+}
+
+/* Principle Cards */
+.dm-solution .border {
+    transition: all 0.2s ease;
+}
+
+.dm-solution .hover\:border-green-500:hover {
+    border-color: var(--wp--preset--color--green-500, #22c55e);
+}

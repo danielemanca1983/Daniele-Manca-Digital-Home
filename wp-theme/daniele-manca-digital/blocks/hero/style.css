@@ -1,0 +1,52 @@
+/* Hero Block Styles */
+.wp-block-daniele-manca-hero {
+    position: relative;
+    min-height: var(--min-height, 90vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dm-hero {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .dm-hero {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dm-hero {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Responsive grid */
+.dm-hero .grid {
+    gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .dm-hero .grid {
+        gap: 0;
+    }
+}
+
+/* Status indicator pulse */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.dm-hero .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

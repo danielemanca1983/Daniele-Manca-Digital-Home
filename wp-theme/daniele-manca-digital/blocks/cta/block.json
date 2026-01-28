@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/cta",
+  "title": "Call to Action",
+  "category": "daniele-manca",
+  "description": "Primary CTA section for strategy consultation",
+  "icon": "button",
+  "keywords": ["cta", "call to action", "button"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "statusText": {
+      "type": "string",
+      "default": "Calm, Clear, Reassuring"
+    },
+    "mainHeading": {
+      "type": "string",
+      "default": "Ready to Stop Guessing and Start Feeling Confident?"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "Book a strategy consultation to review your current website, identify risks and missed opportunities, and determine whether The Website-as-an-Asset System is the right fit for your business."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Book Your Strategy Consultation"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "disclaimerText": {
+      "type": "string",
+      "default": "This is a calm, strategic conversation — not a pitch."
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "editorScript": "file:./render.php",
+  "style": "file:./style.css"
+}

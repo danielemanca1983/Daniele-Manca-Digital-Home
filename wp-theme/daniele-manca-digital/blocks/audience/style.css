@@ -1,0 +1,27 @@
+/* Audience Block Styles */
+.wp-block-daniele-manca-audience {
+    background-color: var(--wp--preset--color--neutral-950, #0a0a0a);
+    padding: 1.5rem;
+}
+
+.dm-audience {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .dm-audience {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Use cases grid */
+.dm-audience .grid {
+    gap: 1.5rem;
+}
+
+/* Checkmark styling */
+.dm-audience .text-yellow-500 {
+    color: var(--wp--preset--color--yellow-500, #eab308);
+}

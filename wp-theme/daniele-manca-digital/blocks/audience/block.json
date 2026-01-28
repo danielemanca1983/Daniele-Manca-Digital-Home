@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/audience",
+  "title": "Audience Section",
+  "category": "daniele-manca",
+  "description": "Dual-card qualification showing Good Fit vs Not Fit audience with distinct visual hierarchy",
+  "icon": "groups",
+  "keywords": ["audience", "ideal client", "fit", "qualification"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "mainHeading": {
+      "type": "string",
+      "default": "Qualification with Confidence"
+    },
+    "introText": {
+      "type": "string",
+      "default": "This approach is designed for..."
+    },
+    "goodFitTitle": {
+      "type": "string",
+      "default": "The Right Fit"
+    },
+    "goodFitPoints": {
+      "type": "array",
+      "default": [
+        "Business owners who take their website seriously as a revenue-supporting asset",
+        "Professional service firms who rely on trust, credibility, and clear positioning",
+        "Established e-commerce companies who want performance without fragility",
+        "Leaders who value expert stewardship over constant involvement"
+      ]
+    },
+    "notFitTitle": {
+      "type": "string",
+      "default": "Not The Right Fit"
+    },
+    "notFitPoints": {
+      "type": "array",
+      "default": [
+        "Early-stage experiments or quick-launch stores",
+        "Businesses looking for surface-level design fixes",
+        "Anyone chasing trends, hacks, or the cheapest option"
+      ]
+    },
+    "notFitRecommendation": {
+      "type": "string",
+      "default": "If you want calm confidence, strategic clarity, and a website you can rely on — this is built for you."
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "style": "file:./style.css"
+}

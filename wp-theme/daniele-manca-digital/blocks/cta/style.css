@@ -1,0 +1,38 @@
+/* CTA Block Styles */
+.wp-block-daniele-manca-cta {
+    background-color: var(--wp--preset--color--white, #ffffff);
+    color: var(--wp--preset--color--black, #000000);
+    padding: 2rem;
+}
+
+.dm-cta {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .dm-cta {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+/* Button styles */
+.dm-cta a {
+    transition: all 0.3s ease;
+}
+
+.dm-cta a:hover {
+    background-color: var(--wp--preset--color--neutral-800, #262626);
+}
+
+/* Responsive button */
+.dm-cta .sm\:w-auto {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .dm-cta .sm\:w-auto {
+        width: auto;
+    }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "daniele-manca/strategic-differentiator",
+  "title": "Strategic Differentiator",
+  "category": "daniele-manca",
+  "description": "Two-column section highlighting strategic approach with principles and value chart",
+  "icon": "star-filled",
+  "keywords": ["differentiator", "unique", "strategy", "asset-system"],
+  "textdomain": "daniele-manca-digital",
+  "attributes": {
+    "status": {
+      "type": "string",
+      "default": "Strategic Stewardship"
+    },
+    "mainHeading": {
+      "type": "string",
+      "default": "Most websites are built to look good. The Website-as-an-Asset System is built to protect and support the business behind it."
+    },
+    "principles": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Business Goals First",
+          "description": "Prioritizing business goals over surface-level aesthetics.",
+          "borderColor": "neutral"
+        },
+        {
+          "title": "Decision Confidence",
+          "description": "Credibility, trust, and decision confidence over trends.",
+          "borderColor": "neutral"
+        },
+        {
+          "title": "Long-term Stability",
+          "description": "Long-term stability over short-term tactics.",
+          "borderColor": "white"
+        },
+        {
+          "title": "Expert Stewardship",
+          "description": "Expert stewardship instead of one-off execution.",
+          "borderColor": "neutral"
+        }
+      ]
+    },
+    "ecommerceLabel": {
+      "type": "string",
+      "default": "For e-commerce:"
+    },
+    "ecommerceText": {
+      "type": "string",
+      "default": "Reducing revenue leaks, improving buyer confidence, and ensuring scalability without fragility."
+    },
+    "servicesLabel": {
+      "type": "string",
+      "default": "For professional services:"
+    },
+    "servicesText": {
+      "type": "string",
+      "default": "Clearer positioning, stronger trust signals, and more consistent enquiries."
+    },
+    "footerText": {
+      "type": "string",
+      "default": "Different business models. Same principle: your website should actively support the business."
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "className": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "html": false
+  },
+  "style": "file:./style.css"
+}
